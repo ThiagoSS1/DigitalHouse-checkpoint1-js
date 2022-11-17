@@ -36,7 +36,7 @@ function getMenu () {
    
     switch (food) {
         case 1:
-            if (time > 3 * 10) {
+            if (time >= 3 * 10) {
                 console.log('\r\n Ka-buumm !!');
             } else if (time >= 2 * 10) {
                 console.log('\r\n Sua comida queimou!');
@@ -47,7 +47,7 @@ function getMenu () {
             }
             break;
         case 2:
-            if (time > 3 * 8) {
+            if (time >= 3 * 8) {
                 console.log('Ka-buumm !!');
             } else if (time >= 2 * 8) {
                 console.log('Sua comida queimou!');
@@ -58,7 +58,7 @@ function getMenu () {
             }
             break;
         case 3:
-            if (time > 3 * 15) {
+            if (time >= 3 * 15) {
                 console.log('Ka-buumm !!');
             } else if (time >= 2 * 15) {
                 console.log('Sua comida queimou!');
@@ -69,7 +69,7 @@ function getMenu () {
             }
             break;
         case 4:
-            if (time > 3 * 12) {
+            if (time >= 3 * 12) {
                 console.log('Ka-buumm !!');
             } else if (time >= 2 * 12) {
                 console.log('Sua comida queimou!');
@@ -80,11 +80,11 @@ function getMenu () {
             }
             break;
         case 5:
-            if (time > 3 * 8) {
+            if (time >= 3 * 8) {
                 console.log('Ka-buumm !!');
             } else if (time >= 2 * 8) {
                 console.log('Sua comida queimou!');
-            } else if (time < 8 && food === 5) {
+            } else if (time < 8 ) {
                 console.log('Tempo insuficiente');
             } else {
                 console.log(` \r\n Prato pronto, bom apetite !!  \r\n`);
